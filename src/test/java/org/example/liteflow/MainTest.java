@@ -20,6 +20,8 @@ public class MainTest {
     assertThat( context.extractFact( 1 ) ).isEqualTo( "1" );
     assertThat( context.extractFact( 3 ) ).isEqualTo( "Fizz" );
     assertThat( context.extractFact( 5 ) ).isEqualTo( "Buzz" );
+    assertThat( context.extractFact( 6 ) ).isEqualTo( "Fizz" );
+    assertThat( context.extractFact( 10 ) ).isEqualTo( "Buzz" );
     assertThat( context.extractFact( 15 ) ).isEqualTo( "FizzBuzz" );
   }
 }
